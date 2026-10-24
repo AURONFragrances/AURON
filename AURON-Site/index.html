@@ -358,12 +358,16 @@
                         No aggressive marketing or artificial urgency. Only thoughtful updates regarding new fragrance batch formulations and physical event locations.
                     </p>
                     
-		<form action="https://formsubmit.co/inquiries@auronfragrance.com" method="POST" class="pt-4 flex flex-col sm:flex-row max-w-md mx-auto gap-3">
-    	<input type="email" name="email" required placeholder="Enter your email address" class="bg-white border border-auron-border px-4 py-3 text-sm text-auron-charcoal rounded-sm focus:outline-none focus:border-auron-bronze flex-grow font-sans">
-   		 <button type="submit" class="bg-auron-charcoal text-auron-ivory hover:bg-auron-bronze text-xs uppercase tracking-widest font-semibold px-6 py-3 rounded-sm transition-colors whitespace-nowrap">
-       		 SUBSCRIBE
-  			  </button>
-				</form>
+<form action="https://formsubmit.co/inquiries@auronfragrance.com" method="POST" class="pt-4 flex flex-col sm:flex-row max-w-md mx-auto gap-3">
+    <!-- Hidden configuration fields to help prevent blank/blocked submissions -->
+    <input type="hidden" name="_subject" value="New Website Subscriber!">
+    
+    <input type="email" name="email" required placeholder="Enter your email address" class="bg-white border border-auron-border px-4 py-3 text-sm text-auron-charcoal rounded-sm focus:outline-none focus:border-auron-bronze flex-grow font-sans">
+    
+    <button type="submit" class="bg-auron-charcoal text-auron-ivory hover:bg-auron-bronze text-xs uppercase tracking-widest font-semibold px-6 py-3 rounded-sm transition-colors whitespace-nowrap">
+        SUBSCRIBE
+    </button>
+</form>
                     <div id="newsletterMsg" class="hidden text-xs text-emerald-700 font-mono pt-2">
                         Thank you for subscribing to AURON updates.
                     </div>
