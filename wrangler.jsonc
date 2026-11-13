@@ -1,10 +1,11 @@
-   {
-     "name": "billowing-cell-f804",
-     "main": "src/worker.js",
-     "compatibility_date": "2026-11-10",
-     "assets": {
-       "directory": "./AURON-Site",
-       "binding": "ASSETS",
-       "run_worker_first": ["/api/*"]
-     }
-   }
+{
+  "name": "billowing-cell-f804",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-11-10",
+  "observability": { "enabled": true },
+  "assets": {
+    "directory": "./AURON-Site",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  }
+}

@@ -92,7 +92,8 @@ async function handleCheckout(request, env, origin) {
     const data = await r.json();
     if (!r.ok || !data.payment_link) {
       console.error('Square error:', JSON.stringify(data));
-      return json({ error: 'Could not create checkout' }, 502);
+      // TEMPORARY while testing: shows Square's error codes in the browser. Remove before going live.
+      return json({ error: 'Could not create checkout', square: data.errors || null }, 502);
     }
     return json({ url: data.payment_link.url });
   } catch (err) {
